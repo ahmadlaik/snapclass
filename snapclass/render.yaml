@@ -2,7 +2,7 @@ services:
   - type: web
     name: snapclass
     runtime: docker
-    plan: starter            # persistent disks need a paid plan on Render
+    plan: free            # persistent disks need a paid plan on Render
     healthCheckPath: /api/health
     
     envVars:
