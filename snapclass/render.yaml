@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: snapclass
+    runtime: docker
+    plan: starter            # persistent disks need a paid plan on Render
+    healthCheckPath: /api/health
+    disk:
+      name: snapclass-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: SNAPCLASS_SECRET
+        generateValue: true

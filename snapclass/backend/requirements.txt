@@ -1,0 +1,6 @@
+flask>=3.0
+PyJWT>=2.8
+numpy>=1.26
+qrcode[pil]>=7.4
+cryptography>=42   # only needed for HTTPS=1 mode
+gunicorn>=22
